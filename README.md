@@ -1,46 +1,74 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Contact Management React App
 
-## Available Scripts
+This is a simple React application for managing contacts. The app allows users to create, list, and delete contacts with details such as name, surname, and email.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **List Contacts**: View all contacts with their name, surname, and email.
+- **Add Contact**: Add a new contact with basic details.
+- **Delete Contact**: Remove a contact from the list.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+To run this project, you need to have Node.js and npm installed. You can download them from [here](https://nodejs.org).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Running the Application
 
-### `npm run eject`
+To start the development server, run:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Build for Production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To create an optimized production build, run:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can run the tests using the following command:
+
+```bash
+npm test
+```
+
+## API Integration
+
+This app uses a simple mock API for fetching and managing contacts. The API calls are simulated using the `ContactsAPI` module located in the `src/utils/ContactsAPI.ts`.
+
+## Project Structure
+
+- **src/components**: Contains the main components of the app such as `ListContacts` and `CreateContact`.
+- **src/utils**: Contains utility files like `ContactsAPI.ts` which simulate API interactions.
+- **src/index.tsx**: Entry point of the application.
+
+## Routes
+
+- `/`: Home page where the list of contacts is displayed.
+- `/create`: Page for adding a new contact.
+
+## React Router
+
+The application uses `react-router-dom` for routing. Make sure you are using version 6 or later.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
